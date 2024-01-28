@@ -1,0 +1,6 @@
+[23-Jan-2024 08:20:56 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for your_database_host failed: Name or service not known in /home/mangalgr/public_html/admin/index.php on line 85
+[23-Jan-2024 08:20:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for your_database_host failed: Name or service not known in /home/mangalgr/public_html/admin/index.php:85
+Stack trace:
+#0 /home/mangalgr/public_html/admin/index.php(85): mysqli->__construct('your_database_h...', 'your_database_u...', 'your_database_p...', 'your_database_n...')
+#1 {main}
+  thrown in /home/mangalgr/public_html/admin/index.php on line 85

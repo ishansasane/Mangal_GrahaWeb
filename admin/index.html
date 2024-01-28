@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <img src="img\logo.png" alt="">
+            
+        </div>
+        <br><br><br><br><br>
+        <ul>
+            <a href="index.html"><li><span>Dashboard</span></li></a><br>
+            <a href="subAdmin.html"><li><span>Sub-Admin</span></li></a><br>
+            <a href="checkRegistration.html"><li><span>Check Registrations</span></li></a>
+            
+        </ul>
+    </div>
+    <div class="container">
+        
+        <div class="content">
+            <div class="cards">
+                <!--<?php
+                    // Replace these variables with your database credentials
+                    $host = "your_database_host";
+                    $username = "your_database_username";
+                    $password = "your_database_password";
+                    $database = "your_database_name";
+
+                    // Create a connection to the database
+                    $conn = new mysqli($host, $username, $password, $database);
+
+                    // Check the connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    // Get the current month and year
+                    $currentMonth = date("m");
+                    $currentYear = date("Y");
+
+                    // Query to get the count of monthly registrations from the database
+                    $sql = "SELECT COUNT(*) as registration_count FROM your_table_name WHERE MONTH(registration_date) = $currentMonth AND YEAR(registration_date) = $currentYear";
+                    $result = $conn->query($sql);
+
+                    // Check if the query was successful
+                    if ($result) {
+                        // Fetch the result as an associative array
+                        $row = $result->fetch_assoc();
+
+                        // Get the registration count
+                        $registrationCount = $row["registration_count"];
+                    } else {
+                        // Handle the error if the query fails
+                        $registrationCount = "Error fetching data";
+                    }
+
+                    // Close the database connection
+                    $conn->close();
+                    ?>
+
+                    <div class="card">
+                        <div class="box">
+                            <h1><?php echo $registrationCount; ?></h1>
+                            <h3>Monthly <br>Registrations</h3>
+                        </div>
+                        <div class="icon-container">
+                            <i class='bx bxs-user-detail'></i>
+                        </div>
+                    </div>
+                    -->
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Monthly <br>Registrations</h3>
+                    </div>
+                    <div class="icon-container">
+                        <i class='bx bxs-user-detail'></i>
+                    </div>
+                </div>
+                <!--<?php
+                    // Replace these variables with your database credentials
+                    $host = "your_database_host";
+                    $username = "your_database_username";
+                    $password = "your_database_password";
+                    $database = "your_database_name";
+
+                    // Create a connection to the database
+                    $conn = new mysqli($host, $username, $password, $database);
+
+                    // Check the connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    // Get the current month and year
+                    $currentMonth = date("m");
+                    $currentYear = date("Y");
+
+                    // Query to get the sum of monthly donations from the database
+                    $sql = "SELECT SUM(donation_amount) as total_donations FROM your_donation_table WHERE MONTH(donation_date) = $currentMonth AND YEAR(donation_date) = $currentYear";
+                    $result = $conn->query($sql);
+
+                    // Check if the query was successful
+                    if ($result) {
+                        // Fetch the result as an associative array
+                        $row = $result->fetch_assoc();
+
+                        // Get the total donations
+                        $totalDonations = $row["total_donations"];
+
+                        // If there are no donations, set it to 0
+                        $totalDonations = $totalDonations ? $totalDonations : 0;
+                    } else {
+                        // Handle the error if the query fails
+                        $totalDonations = "Error fetching data";
+                    }
+
+                    // Close the database connection
+                    $conn->close();
+                    ?>
+
+                    <div class="card">
+                        <div class="box">
+                            <h1><?php echo number_format($totalDonations); ?></h1>
+                            <h3>Monthly <br>Donations</h3>
+                        </div>
+                        <div class="icon-container">
+                            <i class='bx bx-rupee'></i>
+                        </div>
+                    </div>
+                    -->
+                <div class="card">
+                    <div class="box">
+                        <h1>57,000</h1>
+                        <h3>Monthly <br>Donations</h3>
+                    </div>
+                    <div class="icon-container">
+                        <i class='bx bx-rupee' ></i>
+                    </div>
+                </div>
+                <!--<?php
+                    // Replace these variables with your database credentials
+                    $host = "your_database_host";
+                    $username = "your_database_username";
+                    $password = "your_database_password";
+                    $database = "your_database_name";
+
+                    // Create a connection to the database
+                    $conn = new mysqli($host, $username, $password, $database);
+
+                    // Check the connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    // Query to get the total count of registrations from the database
+                    $sql = "SELECT COUNT(*) as total_registrations FROM your_table_name";
+                    $result = $conn->query($sql);
+
+                    // Check if the query was successful
+                    if ($result) {
+                        // Fetch the result as an associative array
+                        $row = $result->fetch_assoc();
+
+                        // Get the total registrations count
+                        $totalRegistrations = $row["total_registrations"];
+                    } else {
+                        // Handle the error if the query fails
+                        $totalRegistrations = "Error fetching data";
+                    }
+
+                    // Close the database connection
+                    $conn->close();
+                    ?>
+
+                    <div class="card">
+                        <div class="box">
+                            <h1><?php echo number_format($totalRegistrations); ?></h1>
+                            <h3>Total <br>Registrations</h3>
+                        </div>
+                        <div class="icon-case">
+                            <img src="schools.png" alt="">
+                        </div>
+                    </div>
+
+                                    -->
+                <div class="card">
+                    <div class="box">
+                        <h1>1,32,765</h1>
+                        <h3>Total <br>Registrations</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="schools.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h1 style="font-weight: 600;">Recent Registrations</h1>
+                    </div>
+                    <!--<?php
+                        // Replace these variables with your database credentials
+                        $host = "your_database_host";
+                        $username = "your_database_username";
+                        $password = "your_database_password";
+                        $database = "your_database_name";
+
+                        // Create a connection to the database
+                        $conn = new mysqli($host, $username, $password, $database);
+
+                        // Check the connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+
+                        // Query to get recent registrations from the database
+                        $sql = "SELECT * FROM your_table_name ORDER BY registration_date DESC LIMIT 10"; // Adjust the query as needed
+                        $result = $conn->query($sql);
+
+                        // Display the table header
+                        echo '<table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Abhishek Type</th>
+                                    <th>Abhishek Date</th>
+                                </tr>';
+
+                        // Display the table rows based on database results
+                        while ($row = $result->fetch_assoc()) {
+                            echo '<tr>
+                                    <td>' . $row["name"] . '</td>
+                                    <td>' . $row["phone"] . '</td>
+                                    <td>' . $row["abhishek_type"] . '</td>
+                                    <td>' . $row["abhishek_date"] . '</td>
+                                    <td><a href="#" class="btn">View</a></td>
+                                </tr>';
+                        }
+
+                        // Close the database connection
+                        $conn->close();
+
+                        // Close the table
+                        echo '</table>';
+                        ?>
+                        -->
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Abhishek Type</th>
+                            <th>Abhishek Date</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
